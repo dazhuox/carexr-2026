@@ -76,7 +76,7 @@ module.exports = async function handler(req, res) {
     }
 
     // Step 1: Gemini generates the answer
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-lite" });
 
     const result = await model.generateContent({
       contents: [
