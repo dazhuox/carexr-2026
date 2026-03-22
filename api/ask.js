@@ -111,6 +111,9 @@ module.exports = async function handler(req, res) {
     });
   } catch (error) {
     console.error("Handler error:", error);
-    return res.status(500).json({ error: "AI service unavailable" });
+    return res.status(500).json({
+      error: "AI service unavailable",
+      detail: error.message || String(error),
+    });
   }
 };
