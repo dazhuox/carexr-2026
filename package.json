@@ -1,0 +1,11 @@
+{
+  "name": "carexr-planet-ai",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  }
+}
